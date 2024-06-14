@@ -149,7 +149,7 @@ window.addEventListener('keydown',e=>{
     // function startmusic(){
     //     return true;
     // }
-    inputDir={x:0,y:1} //start of the game
+    inputDir={x:0,y:0} //start of the game
     moveSound.play();
     switch(e.key){
         case "ArrowUp":

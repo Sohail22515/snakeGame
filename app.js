@@ -155,28 +155,36 @@ window.addEventListener('keydown',e=>{
     switch(e.key){
         case "ArrowUp":
             // console.log("up");
-            inputDir.x=0;
-            inputDir.y=-1;
+            if(inputDir.y!=1){
+                inputDir.x=0;
+                inputDir.y=-1;
+            }
             break;
 
         case "ArrowDown":
             // console.log("down ");
-            inputDir.x=0;
-            inputDir.y=1;
+            if(inputDir.y!=-1){
+                inputDir.x=0;
+                inputDir.y=1;
+            }
             break;
 
         case "ArrowLeft":
             // console.log("left");
-            inputDir.x=-1;
-            inputDir.y=0;
+            if(inputDir.x!=1){
+                inputDir.x=-1;
+                inputDir.y=0;
+            }
             break;
 
         case "ArrowRight":
             // console.log("right");
-            inputDir.x=1;
-            inputDir.y=0;
+            if(inputDir.x!=-1){
+                inputDir.x=1;
+                inputDir.y=0;
+            }
             break;
-             
+            
         default:
             break;
 

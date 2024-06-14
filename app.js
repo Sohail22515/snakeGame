@@ -86,6 +86,7 @@ function gameEngine(){
         //musicSound.play();
         score=0;
         scoreboad.innerHTML="Score: " + score;
+        speed=3;
     }
 
     // if food is eaten

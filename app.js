@@ -63,6 +63,7 @@ function isCollide(snakeArr){
 
 // setting the local storage for string higsht score
 highScoreBox.innerHTML=localStorage.getItem("highScore");
+if(localStorage.highScore===null){localStorage.setItem("highScore", 0);} //on a new system locakStorage.highScore is not define
 highScoreBox.innerHTML="Highest Score:" + localStorage.highScore;// this value is comming from the local storage
 //localStorage.setItem("highScore",highScoreVal);
 //highScoreBox.innerHTML="Highest Score:" + highScoreVal;

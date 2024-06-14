@@ -85,6 +85,7 @@ function gameEngine(){
         if(check){musicSound.play();}
         //musicSound.play();
         score=0;
+        scoreboad.innerHTML="Score: " + score;
     }
 
     // if food is eaten
